@@ -1,0 +1,14 @@
+## 应用名
+spring:
+  application:
+    name: eureka-consumer-feign
+
+## 端口
+server:
+  port: 1006
+
+## 服务消费方配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
