@@ -7,7 +7,7 @@ spring:
 server:
   port: 1003
 
-## 服务消费方配置
+## 服务注册中心地址
 eureka:
   client:
     serviceUrl:
