@@ -1,0 +1,14 @@
+## 应用名
+spring:
+  application:
+    name: eureka-consumer-ribbon-hystrix
+
+## 端口
+server:
+  port: 1007
+
+## 服务消费方配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
