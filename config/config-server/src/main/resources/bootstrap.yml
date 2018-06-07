@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          # 配置git仓库地址
+          uri: https://github.com/se7en-11/springcloud/
+          # 配置仓库路径
+          search-paths: config
+          # git账户与密码，公开的可以不设置
+          #username: se7en-11
+          #password: qqwwee77
+server:
+  port: 2000
+
+
