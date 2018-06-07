@@ -1,0 +1,20 @@
+## 应用名
+spring:
+  application:
+    name: eureka-consumer-feign-hystrix
+
+## 端口
+server:
+  port: 1008
+
+## 服务消费方配置
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
+
+## 断路器开关
+feign:
+  hystrix:
+    enabled: true
+
