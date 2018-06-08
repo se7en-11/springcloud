@@ -8,7 +8,7 @@ spring:
       profile: master
       uri: http://localhost:2000/
 
-# 关闭刷新安全认证，用户动态刷新发送post请求时避免401错误
+# 关闭刷新安全认证，避免用户动态刷新发送post请求时报401错误
 management:
   security:
     enabled: false
