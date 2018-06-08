@@ -7,7 +7,7 @@ spring:
 server:
   port: 1100
 
-## 服务网关配置
+## 传统服务网关配置
 zuul:
   routes:
     # 单个实例
