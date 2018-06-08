@@ -1,0 +1,25 @@
+## 应用名
+spring:
+  application:
+    name: zuul-gateway-traditional-route
+
+## 端口
+server:
+  port: 1100
+
+## 服务网关配置
+zuul:
+  routes:
+    # 单个实例
+    single-instance:
+      path: /traditional/single/**
+      url: http://localhost:1002/
+    # 多个实例
+    multi-instance:
+      path: /traditional/multi/**
+      serviceId: multi-instance
+
+## 使用Ribbon负载均衡
+multi-instance:
+  ribbon:
+    listOfServers: http://localhost:1002, http://localhost:1004
