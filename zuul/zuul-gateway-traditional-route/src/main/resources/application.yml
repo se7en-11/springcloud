@@ -19,7 +19,7 @@ zuul:
       path: /traditional/multi/**
       serviceId: multi-instance
 
-## 使用Ribbon负载均衡
+## Zuul自带Ribbon依赖，这里使用Ribbon做负载均衡
 multi-instance:
   ribbon:
     listOfServers: http://localhost:1002, http://localhost:1004
